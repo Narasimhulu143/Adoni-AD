@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light bg-transparent">
+            <div class="container">
+                <strong><img src="Untitled Project - Artboard 2-Photoroom.png" alt="" width="130px"
+                        height="80px"></strong>
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">HOME
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">HISTORY</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Adoni">Wikipedia</a>
+                                <a class="dropdown-item" href="#">Peoples Say's</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">HOTELS</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="Hotel.html">Hotels in Adoni</a>
+                                <a class="dropdown-item" href="Hotel.html#restaurants">Restaurants in Adoni</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Amenities.html" aria-current="page">AMENITIES
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="About.html" aria-current="page">ABOUT
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2 bg-transparent" type="text" placeholder="Search" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-item text-center py-4">
+            <h1 class="banner-title"><span>A</span><span>D</span><span>O</span><span>N</span><span>I</span></h1>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <section class="constainer p-5 bg-light">
+        <div class="galary-title text-center mb-4 text-dark">
+            <h3><strong>Adoni Photo Gallery</strong></h3>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="adoni/photo1.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo2.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo3.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo4.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo5.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo6.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo7.jpeg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo8.jpeg.jpg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/photo9.jpg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/IMG_20230729_183425_1.jpg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/IMG_20230816_145623.jpg" alt="" width="100px" height="250px">
+            </div>
+            <div class="item">
+                <img src="adoni/IMG_20240824_104313_9.jpg" alt="" width="100px" height="250px">
+            </div>
+
+        </div>
+    </section>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+
+    <section>
+        <div class="row p-5 text-center">
+            <div class="card-title">
+                <h2><span class="text-primary-emphasis"><strong>HOTELS</strong></span></h2>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/vimala-regency-kurnool-hotels.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Vimala Regency </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/Beemas_res.png" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Bheemas Regency </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/deepthi1.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Sri Deepthi Lodge </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/dwaraka.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Dwaraka Lodge</h5>
+            </div>
+            <div class="card-footer"> <a href="Hotel.html" class="btn btn-primary" role="button">View
+                    More</a></div>
+            <br><br><br>
+            <!-- RESTAURANTS -->
+            <div class="card-title">
+                <h2><span class="text-primary-emphasis p-4"><strong>Restaurants</strong></span></h2>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/adoni_restaurents/Red-chilli2.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Red Chilli Bar & Family Restaurant </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/adoni_restaurents/renukambaa1.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3">Renukaamba Veg Hotel </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/adoni_restaurents/tulajaa.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Trupthi Bhojanashala </h5>
+            </div>
+            <div class="card-body col-12 col-sm-3 p-3">
+                <img src="adoni/hotel/adoni_restaurents/basamma.jpeg" alt="" width="350px" height="350px">
+                <h5 class="py-3"> Bassamma Hotel</h5>
+            </div>
+            <div class="card-footer"> <a href="Hotel.html#restaurants" class="btn btn-primary" role="button">View
+                    More</a>
+            </div>
+        </div>
+    </section>
+    <section class="amenities-section">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="adoni/adoni map.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="amenities-overlay">
+            <h2>Town Amenities</h2>
+            <p class="section-intro">
+                Our town offers a rich blend of tradition and modern convenience. Explore the spaces that bring our
+                community together.
+            </p>
+
+            <div class="amenities-grid">
+                <article class="amenity-card">
+                    <div class="amenity-icon" id="icon-temple"></div>
+                    <h3>Historic Temple</h3>
+                    <p>A spiritual landmark and architectural gem that reflects our town’s cultural heritage.</p>
+                </article>
+
+                <article class="amenity-card">
+                    <div class="amenity-icon" id="icon-lake"></div>
+                    <h3>Scenic Lake</h3>
+                    <p>Perfect for morning walks, birdwatching, and peaceful reflection amid nature.</p>
+                </article>
+
+                <article class="amenity-card">
+                    <div class="amenity-icon" id="icon-market"></div>
+                    <h3>Weekly Market</h3>
+                    <p>Local vendors, fresh produce, and handmade goods that celebrate our town’s spirit.</p>
+                </article>
+
+                <article class="amenity-card">
+                    <div class="amenity-icon" id="icon-school"></div>
+                    <h3>Community School</h3>
+                    <p>Empowering the next generation with inclusive education and modern facilities.</p>
+                </article>
+            </div>
+        </div>
+        <div class="card-footer"> <a href="Amenities.html" class="btn btn-primary my-4" role="button">View
+                More</a>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-center ">
+        <h3 class="container ">&copy;Personal Project & Town </h3>
+    </footer>
+</body>
+
+</html>

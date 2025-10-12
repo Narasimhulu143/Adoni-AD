@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>AMENITIES</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link rel="stylesheet" href="amenities.css">
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Public Sans"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <div class="flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-10 py-4">
+        <div class="flex items-center gap-4 text-slate-800 dark:text-white">
+          <div class="h-13 w-13 text-primary p-0">
+            <img src="Untitled Project - Artboard 2-Photoroom.png" alt="" width="110px" height="110px">
+
+          </div>
+        </div>
+        <nav class="hidden md:flex flex-1 justify-center gap-8">
+          <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary"
+            href="index.html">Home</a>
+          <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary"
+            href="#">Events</a>
+          <a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary"
+            href="About.html#Contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <div class="flex gap-2">
+            <button
+              class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+              <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                </path>
+              </svg>
+            </button>
+            <button
+              class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+              <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <div class="h-10 w-10 rounded-full bg-cover bg-center"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfyXpv_1idQ2rRiKTEbeF-yGKyS_oqSbL38gJs_vbt0ZMpzx3jKIMiMRbwsPZXVDgvHIaDIreFFhP9sITQ2fJaY5hZ8zYpYaUx_LtMdFmDNU6n5RTz3EClYxs8ljw7NcLlpatMIL3Qxsj69IC_11uQCAZ6sCM-hZej_V_4zivvHRq8SSbTrRguY1lUD68imhT89kKtN6axbq4L6tvzr_bSlS9GiewiTXFtocyf9i3Qvp1T3iWPmaVDEgCxSLrd9K6wJr9el81xlSqq");'>
+          </div>
+        </div>
+      </header>
+      <main class="flex flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-5xl">
+          <div class="mb-12 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Adoni
+            </h1>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Explore the facilities and services available in
+              Adoni.</p>
+          </div>
+          <div class="space-y-16">
+            <div>
+              <h2 class="mb-6 border-b border-primary/20 pb-2 text-2xl font-bold text-slate-800 dark:text-white">Parks
+              </h2>
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4yQjyFdCorM1DOYWV6CaJpTpR6jZvyPQX5DZ3lNk23Tx-E2nHI1q-AuNqcKAZ-11PUafl19WlLGxAxLRmx1lcaE2-HlGHaNTQRP1xBKNHS0Od2eApwBJSmH_PUh-Feh0sYE7XZel_Mo4gTqi8eBv4jN1AHOhysoH8qPk6r6Pvj9AmjXL08jgHDuwZwyCvQdIcM_UH-TE_8vtjtlgJ6wEFtmIjMJOCtppzXVxjkfxwbwMpwjYaO-dD8GYnNwt72HZBCEmoRTEpAoXr");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Municipal Park Adoni</h3>
+                    <p><strong>Location:</strong> Central Adoni</p>
+                    <ul>
+                      <li>Well-maintained gardens and walking paths</li>
+                      <li>Recreational areas for families and children</li>
+                      <li>Popular for morning walks and evening strolls</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("adoni/Places/Konda_Reddy_Buruju.jpg");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Kondareddy Buruju Park</h3>
+                    <p><strong>Location:</strong> Near Kondareddy Buruju Fort</p>
+                    <ul>
+                      <li>Lush greenery and panoramic views</li>
+                      <li>Peaceful ambiance for nature lovers</li>
+                      <li>Great for photography and quiet reflection</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <header class="pt-2">
+              <h1>Community Centers in Adoni</h1>
+              <p>Explore venues for events, wellness, and social gatherings</p>
+            </header>
+
+            <div class="container">
+              <section class="category">
+                <h2> Convention & Function Halls</h2>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>MALA ASHOK KUMAR</h3>
+                  <p>Location: Ambedkar Bhavan</p>
+                  <p>Open 24 hours | Rating: 5.0</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>VSB & VNB Function Halls</h3>
+                  <p>Location: Near Bus Stand, Alur Road</p>
+                  <p>Open 24 hours | Rating: 4.4</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>Chekuri Convention</h3>
+                  <p>Location: RTC Colony, Gooty–Adoni Road</p>
+                  <p>Open from 9 AM | Rating: 4.3</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>KGN Function Hall</h3>
+                  <p>Location: R&B Guest House Road</p>
+                  <p>Open 24 hours | Rating: 3.6</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>SMB Function Hall</h3>
+                  <p>Location: Aranjyothi Nagar</p>
+                  <p>Rating: 3.6</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>Mahalthy Function Hall</h3>
+                  <p>Location: Beside Narayana School, Revenue Colony</p>
+                  <p>Open 24 hours | Rating: 3.8</p>
+                </div>
+              </section>
+
+              <section class="category">
+                <h2> Wellness & Fitness Centers</h2>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>AFC Fitness Center</h3>
+                  <p>Location: Ambedkar Nagar, Adoni–Yemmiganur Road</p>
+                  <p>Open 24 hours | Rating: 4.8</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>Sai Nava Mohan Wellness Centre</h3>
+                  <p>Location: SKD Colony</p>
+                  <p>Open until 8 PM | Rating: 4.9</p>
+                </div>
+
+                <div class="card transform transition hover:scale-105 hover:shadow-xl">
+                  <h3>Piramid Dhana Kendra</h3>
+                  <p>Location: SKD Colony</p>
+                  <p>Meditation Center | Rating: 4.8</p>
+                </div>
+              </section>
+            </div>
+
+            <div>
+              <h2 class="mb-6 border-b border-primary/20 pb-2 text-2xl font-bold text-slate-800 dark:text-white">
+                Libraries</h2>
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmjhle7CZdKQCfIk6IuCkWU8nO9cL1VROJJTENDdInElAmKumB26CtuoUiqAhZ2BYZ5e55qUsTTxmoTpG00HTIRuBxY6wcM_2AWR2xEVDuXwYl6EToQTeOaRp6VYpOGM6gcU_bD136954uytb0cuRkmK4qGPj_U0hEvTKMlePXFWGk_d37OxsvMc4YqU5Kzs2GrrlFpHoBYoDOocwD_FQ0J2j3WQyiJ7lgZq3kLyyJarch-nWdNEUXmOGFztsHv6hv6451vgrwStTZ");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Harmony Creek Public Library</h3>
+                    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">The main library branch with a large
+                      collection of books, computers, and study rooms.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxNHyrA7P9Fh5DjCBiLsvqzohkzfx2DNO9GtuiDc_EgO7VJMspDrgLvnbV7JQtDumzM1Yw4S2YJ7QUzQme2MavN8jqnPjRhqqbPKftgRRsw0oP8JRzwV2_QNL6D7WKXRULR7XfbtiiVSJrw4li7lpB-W_ZgeFFgnZEccIsjKak1UGNqP2N9bTc_QGue7x21B02RU59TAgAVpWDuHl28lhznIBdbvizmo02PBpw5xk_6aJXs1X-gXD0GDElAz7o2MQ7wPi_PsKvB3gp");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Southwood Branch Library</h3>
+                    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">A smaller branch library with a focus on
+                      children's and young adult literature.</p>
+                  </div>
+                </div>
+              </div>
+              <h1 class="py-4 text-blod text-center text-bg-danger">Adoni School,Colleges Details</h1>
+
+              <!-- primary school details -->
+              <!-- <script src="jquery-3.7.1.min.js"></script> -->
+              <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+              <script>
+                $(document).ready(() => {
+                  $('.primary').hide()
+
+                  $('#menu').click(() => {
+                    $('.primary').fadeToggle(300)
+
+                  })
+                })
+              </script>
+
+              <!-- secondary school details -->
+              <script>
+                $(document).ready(() => {
+                  $('.secondary').hide()
+
+                  $('#info').click(() => {
+                    $('.secondary').fadeToggle(300)
+
+                  })
+                })
+              </script>
+              <!--  -->
+              <!-- degree college details -->
+              <script>
+                $(document).ready(() => {
+                  $('.degree').hide()
+
+                  $('#college').click(() => {
+                    $('.degree').fadeToggle(300)
+
+                  })
+                })
+              </script>
+              <!--  -->
+
+              <section class="container p-0">
+                <div class="row text-center ">
+                  <div class="Edu  p-3 d-flex">
+                    <button class="btn btn-info mb-5 py-3" id="menu">Primary Schools Details</button>
+                    <button class="btn btn-info mb-5 py-3" id="info">Secondary Schools Details</button>
+                    <button class="btn btn-info mb-5 py-3" id="college">Colleges Details</button>
+                  </div>
+                  <div class="primary">
+                    <h4>Primary School Details</h4>
+                    <table cellpadding="8">
+                      <thead>
+                        <tr>
+                          <th>School Name</th>
+                          <th>Type</th>
+                          <th>Class Range</th>
+                          <th>Medium</th>
+                          <th>Area</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Govt PS 1st Ward</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu (+basic English)</td>
+                          <td>1st Ward</td>
+                        </tr>
+                        <tr>
+                          <td>Govt PS Kranthi Nagar</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Kranthi Nagar</td>
+                        </tr>
+                        <tr>
+                          <td>Bharpet Mpl PS</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Bharpet</td>
+                        </tr>
+                        <tr>
+                          <td>Buddekal Govt PS</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Buddekal</td>
+                        </tr>
+                        <tr>
+                          <td>Hanuman Nagar Govt PS</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Hanuman Nagar</td>
+                        </tr>
+                        <tr>
+                          <td>Indira Nagar Govt PS</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Indira Nagar</td>
+                        </tr>
+                        <tr>
+                          <td>Kilchen Peta Govt PS</td>
+                          <td>Govt</td>
+                          <td>1–5</td>
+                          <td>Telugu</td>
+                          <td>Kilchen Peta</td>
+                        </tr>
+                        <tr>
+                          <td>St. Anthony’s Aided PS</td>
+                          <td>Private Aided</td>
+                          <td>1–5</td>
+                          <td>Telugu & English</td>
+                          <td>Central Adoni</td>
+                        </tr>
+                        <tr>
+                          <td>Sri Chaitanya EM (Primary Section)</td>
+                          <td>Private Unaided</td>
+                          <td>1–5 (overall up to 10)</td>
+                          <td>English</td>
+                          <td>Near RTC Bus Stand</td>
+                        </tr>
+                        <tr>
+                          <td>Amaravathi EM Primary</td>
+                          <td>Private Unaided</td>
+                          <td>1–5</td>
+                          <td>English</td>
+                          <td>Adoni town</td>
+                        </tr>
+                        <tr>
+                          <td>C. Mallikarjuna Vidyalayam PS</td>
+                          <td>Private Unaided</td>
+                          <td>1–5</td>
+                          <td>English</td>
+                          <td>SBI Colony</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </div>
+                  <div class="secondary">
+                    <h4><b>Secondary School Details </b></h4>
+                    <table cellpadding="8">
+                      <thead>
+                        <tr>
+                          <th>School Name</th>
+                          <th>Type</th>
+                          <th>Medium(s)</th>
+                          <th>Location</th>
+                          <th>Reputation</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>YMK High School</td>
+                          <td>Govt-Aided</td>
+                          <td>English, Telugu, Kannada</td>
+                          <td>Adoni town</td>
+                          <td>Legacy, reputed</td>
+                        </tr>
+                        <tr>
+                          <td>Govt HS (Girls)</td>
+                          <td>Govt</td>
+                          <td>Telugu</td>
+                          <td>Central Adoni</td>
+                          <td>Trusted for girls</td>
+                        </tr>
+                        <tr>
+                          <td>Nehru Memorial HS</td>
+                          <td>Govt</td>
+                          <td>Telugu & English</td>
+                          <td>Adoni town</td>
+                          <td>High-demand govt</td>
+                        </tr>
+                        <tr>
+                          <td>TGLV High School</td>
+                          <td>Private-Aided</td>
+                          <td>Telugu (State Board)</td>
+                          <td>Adoni (M)-2</td>
+                          <td>Long-standing</td>
+                        </tr>
+                        <tr>
+                          <td>Mosoodia Arabic HS</td>
+                          <td>Private-Aided</td>
+                          <td>Urdu/Arabic + State</td>
+                          <td>Adoni (M)-2</td>
+                          <td>Cultural focus</td>
+                        </tr>
+                        <tr>
+                          <td>St. Joseph’s High School</td>
+                          <td>Private Unaided</td>
+                          <td>Telugu/English</td>
+                          <td>Adoni (M)-2</td>
+                          <td>Well-regarded private</td>
+                        </tr>
+                        <tr>
+                          <td>Milton Grammar High School</td>
+                          <td>Private Unaided</td>
+                          <td>English (State Board)</td>
+                          <td>Adoni (M)-2</td>
+                          <td>Strong infra</td>
+                        </tr>
+                        <tr>
+                          <td>Kiddys High School</td>
+                          <td>Private Unaided</td>
+                          <td>English (State Board)</td>
+                          <td>Adoni (M)-2</td>
+                          <td>Modern, trusted</td>
+                        </tr>
+                        <tr>
+                          <td>Sri Chaitanya EM High School</td>
+                          <td>Private Unaided</td>
+                          <td>English</td>
+                          <td>RTC Bus Stand area</td>
+                          <td>Exam-focused</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </div>
+                  <div class="degree">
+                    <h4>Junior Colleges (Intermediate Level) – Adoni</h4>
+                    <table cellpadding="8">
+                      <thead>
+                        <tr>
+                          <th>College Name</th>
+                          <th>Type</th>
+                          <th>Level</th>
+                          <th>Courses Offered</th>
+                          <th>Noteworthy Facilities</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Govt Junior College (Girls)</td>
+                          <td>Government</td>
+                          <td>Junior</td>
+                          <td>Intermediate (State Board)</td>
+                          <td>Library, IT tools, hygienic infrastructure</td>
+                        </tr>
+                        <tr>
+                          <td>Akshara Jr College</td>
+                          <td>Private Unaided</td>
+                          <td>Junior</td>
+                          <td>Intermediate (State Board)</td>
+                          <td>Library, desktops, boundary wall</td>
+                        </tr>
+                        <tr>
+                          <td>AASC Jr College</td>
+                          <td>Private Aided</td>
+                          <td>Junior</td>
+                          <td>Intermediate (State Board)</td>
+                          <td>Extensive AV/digital infrastructure</td>
+                        </tr>
+                        <tr>
+                          <td>T G Prahlada Jr College</td>
+                          <td>Private Aided</td>
+                          <td>Junior</td>
+                          <td>Intermediate (State Board)</td>
+                          <td>Not specified</td>
+                        </tr>
+                        <tr>
+                          <td>Sai Jr College</td>
+                          <td>Private Unaided</td>
+                          <td>Junior</td>
+                          <td>Intermediate (State Board)</td>
+                          <td>Library, webcams, IT, boundary wall</td>
+                        </tr>
+                        <tr>
+                          <td>Padmavathi Vocational Jr College</td>
+                          <td>Private Unaided</td>
+                          <td>Junior</td>
+                          <td>Intermediate + Vocational</td>
+                          <td>Vocational labs, digital tools</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h4>Degree & Technical Colleges – Adoni</h4>
+                    <table cellpadding="8">
+                      <thead>
+                        <tr>
+                          <th>College Name</th>
+                          <th>Type</th>
+                          <th>Level</th>
+                          <th>Courses Offered</th>
+                          <th>Noteworthy Facilities</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Adoni Arts & Science College (AASC)</td>
+                          <td>Private Aided</td>
+                          <td>Degree & PG</td>
+                          <td>UG & PG: Arts, Science, Commerce, BBA, etc.</td>
+                          <td>Hostels, labs, library, placement cell, study centers</td>
+                        </tr>
+                        <tr>
+                          <td>Sai Degree College</td>
+                          <td>Private Unaided</td>
+                          <td>Degree</td>
+                          <td>B.A., B.Sc., B.Com.</td>
+                          <td>Sports, hostel, labs, Wi-Fi</td>
+                        </tr>
+                        <tr>
+                          <td>BITS Polytechnic</td>
+                          <td>Private Unaided</td>
+                          <td>Technical</td>
+                          <td>Diploma / Technical Engineering</td>
+                          <td>Digital learning, labs, sports facility</td>
+                        </tr>
+                        <tr>
+                          <td>Dr. Jyothirmayi Degree College</td>
+                          <td>Private Unaided</td>
+                          <td>Degree</td>
+                          <td>UG general streams</td>
+                          <td>Not specified</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+
+              </section>
+
+            </div>
+            <div>
+              <h2 class="mb-6 border-b border-primary/20 pb-2 text-2xl font-bold text-slate-800 dark:text-white">
+                Transportation</h2>
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("adoni/Places/Edu/Bus\ and\ train.jpg");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Town Bus Stops</h3>
+                    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Conveniently located bus stops throughout
+                      the town for easy public transit.</p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 overflow-hidden rounded-lg bg-white dark:bg-slate-800/50 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                  <div class="aspect-video w-full bg-cover bg-center"
+                    style='background-image: url("adoni/Places/IMG_20230920_085621_transcpr.jpg ");'>
+                  </div>
+                  <div class="flex flex-col p-4">
+                    <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Harmony Creek Train Station</h3>
+                    <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Connecting our town to neighboring cities
+                      with regular train services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="bg-gray-100 py-6 px-6">
+              <div class="max-w-5xl mx-auto">
+                <h2 class="mb-6 border-b border-primary/20 pb-2 text-2xl font-bold text-slate-800 dark:text-white">
+                  Entertainment</h2>
+                <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">🎬 Movie Theaters in Adoni</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                  <!-- V Celluloids -->
+                  <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="adoni/Places/eve/v-celluloids-skd-nagar-adoni-cinema-halls-bpkg361ngj.avif"
+                      alt="V Celluloids Theater" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                      <h3 class="text-xl font-semibold text-gray-800">V Celluloids</h3>
+                      <p class="text-gray-600">Railway Station Road, HBG Nagar</p>
+                      <p class="mt-2 text-sm text-gray-500">Modern multiplex with multiple screens and comfy seating.
+                      </p>
+                      <a href="http://www.vcelluloids.com/"
+                        class="text-indigo-600 hover:underline mt-2 inline-block">Visit Website</a>
+                    </div>
+                  </div>
+
+                  <!-- Saibaba Theatre -->
+                  <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="adoni/Places/eve/7-pvr-cinemas-1-ez8u7.avif" alt="Saibaba Theatre"
+                      class="w-full h-48 object-cover">
+                    <div class="p-6">
+                      <h3 class="text-xl font-semibold text-gray-800">Saibaba Theatre</h3>
+                      <p class="text-gray-600">HBG Nagar, Adoni</p>
+                      <p class="mt-2 text-sm text-gray-500">Classic single-screen experience with regional films.</p>
+                    </div>
+                  </div>
+
+                  <!-- Rajshri Cine Complex -->
+                  <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="adoni/Places/eve/s3.jpg" alt="Rajshri Cine Complex" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                      <h3 class="text-xl font-semibold text-gray-800">Rajshri Cine Complex 4K</h3>
+                      <p class="text-gray-600">Havanapet, Railway Station Road</p>
+                      <p class="mt-2 text-sm text-gray-500">High-quality visuals and sound in a modern setting.</p>
+                    </div>
+                  </div>
+
+                  <!-- Satyam Theatre -->
+                  <div
+                    class="bg-white shadow-md rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="adoni/Places/eve/default-cinema-halls-7.avif" alt="Satyam Theatre"
+                      class="w-full h-48 object-cover">
+                    <div class="p-6">
+                      <h3 class="text-xl font-semibold text-gray-800">Satyam Theatre 4K</h3>
+                      <p class="text-gray-600">HBG Nagar, Adoni</p>
+                      <p class="mt-2 text-sm text-gray-500">Smaller venue with 4K projection for new releases.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <footer class="container-fluid text-center py-3">
+    <h3 class="container ">&copy;Personal Project & Town </h3>
+  </footer>
+</body>
+
+</html>

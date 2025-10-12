@@ -1,0 +1,131 @@
+/* Font family */
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+/* Hover effect for nav links */
+.hover-link:hover {
+  color: #1173d4 !important;
+  text-decoration: underline;
+}
+
+/* Avatar image */
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Icon button hover */
+.icon-btn:hover {
+  background-color: rgba(17, 115, 212, 0.1);
+  border-color: #1173d4;
+}
+
+/* Dark mode support */
+body.dark-mode {
+  background-color: #101922;
+  color: #f6f7f8;
+}
+body.dark-mode header {
+  background-color: #101922;
+  border-color: rgba(17, 115, 212, 0.3);
+}
+body.dark-mode .hover-link {
+  color: #ccc;
+}
+body.dark-mode .hover-link:hover {
+  color: #1173d4 !important;
+}
+
+
+
+
+
+  .Edu button {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 5px 7px;
+  }
+
+  .Edu button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    background: linear-gradient(to right, rgba(221, 83, 3, 0.986), #feb47b);
+    color: white;
+  }
+
+  .btn:hover {
+    transform: scale(0.98);
+    transition: transform 0.3s;
+    background: linear-gradient(to right, rgba(221, 83, 3, 0.986), #feb47b);
+    color: white;
+  }
+
+  table {
+    border: 1px solid black;
+    background: linear-gradient(to right, #15c0d6e0, rgba(158, 8, 204, 0.945));
+    border-collapse: collapse;
+    width: 100%;
+    text-align: justify;
+    color: #ffffff;
+    box-shadow: 1px 5px 7px;
+  }
+
+  thead {
+    background: linear-gradient(to left, #15c0d6e0, #d41020);
+  }
+
+  tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+   body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding-top:10px ;
+    }
+    h2 {
+      color: #4CAF50;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+    }
+    .card:hover{
+      background-color: rgba(0, 255, 98, 0.452);
+    }
+    .card h3 {
+      margin: 0;
+      color: #333;
+    }
+    .card p {
+      margin: 0.5rem 0;
+    }
+    .category {
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<style>
+    body {
+        background-color: rgba(119, 136, 153, 0.733);
+    }
+
+    strong {
+        box-shadow: 0px 2px 0px 0px goldenrod;
+    }
+
+    span {
+        border: 0px 2px 0px 0px goldenrod;
+        color: rgb(196, 141, 4);
+    }
+
+    nav li {
+
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+
+    nav li:hover {
+        background-color: rgba(218, 165, 32, 0.719);
+    }
+
+    .dropdown-item:hover {
+        background-color: rgba(218, 165, 32, 0.719);
+    }
+
+    .banner-item {
+        background-image: url("adoni/hotel/vimala.jpeg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .row img {
+        border-radius: 10px;
+        box-shadow: 1px 5px 7px;
+    }
+
+    .row img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+    }
+</style>
+
+<body>
+    <header class="bg-transparent">
+        <nav class="navbar  fixed-top ">
+            <div class="container-fluid ">
+
+                <a class="navbar-brand" href="#"> <img src="Untitled Project - Artboard 2-Photoroom.png" alt=""
+                        width="130px" height="80px"><strong>HOTELS</strong></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Best <span>Hotels</span> &
+                            <span>Restaurants</span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    HOTELS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                    <li><a class="dropdown-item" href="#Hotel"><strong>The Top Listed</strong></a></li>
+                                    <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#Vimala Regency">Vimala Regency</a></li>
+                            <li><a class="dropdown-item" href="#Bheemas Regency">Bheemas Regency</a></li>
+                            <li><a class="dropdown-item" href="#Chekuri Residency">Chekuri Residency </a></li>
+                            <li><a class="dropdown-item" href="#Sri Deepthi Lodge">Sri Deepthi Lodge</a></li>
+                            <li><a class="dropdown-item" href="#The Aura">The Aura</a></li>
+                            <li><a class="dropdown-item" href="#Dwaraka Lodge">Dwaraka Lodge</a></li>
+                            <li><a class="dropdown-item" href="#Rajshri Hotel">Rajshri Hotel</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                RESTAURANTS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                <li><a class="dropdown-item" href="#restaurants">The Top Restaurants</a></li>
+                                <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#Trupthi Bhojanashala">Trupthi Bhojanashala</a></li>
+                        <li><a class="dropdown-item" href="#Red Chilli Bar & Family Restaurant">Red Chilli Bar & Family
+                                Restaurant</a></li>
+                        <li><a class="dropdown-item" href="#Sri Sai Milltree Hotel">Sri Sai Milltree Hotel</a></li>
+                        <li><a class="dropdown-item" href="#Shawarma King">Shawarma King</a></li>
+                        <li><a class="dropdown-item" href="#Bassamma Hotel">Bassamma Hotel</a></li>
+                        <li><a class="dropdown-item" href="#Renukaamba Veg Hotel">Renukaamba Veg Hotel</a></li>
+                        <li><a class="dropdown-item" href="#Sri Krishna Bhavan">Sri Krishna Bhavan</a></li>
+                        <li><a class="dropdown-item" href="#Tulaja Family Restaurant">Tulaja Family Restaurant</a></li>
+
+                        </ul>
+                        </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-item">
+            <div class="banner-content text-center text-warning py-4">
+                <h1 class="banner-title">Adoni</h1>
+                <h4>Discover the best hotels and accommodations <br>in Adoni, Andhra Pradesh.</h4>
+                <button class="btn btn-outline-info w-25">Explore Now</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container py-3 " id="Hotel">
+        <h2 class="text-center py-5"><b>The Top <span
+                    class="animate__animated animate__zoomInRight animate__delay-0.5s animate__infinite	infinite">Hotels</span>
+                in Adoni</b></h2>
+        <div class="row justify-content-center align-items-center" id="Vimala Regency">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/vimala-regency-kurnool-hotels.jpeg" alt=""
+                    style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2>Vimala Regency &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: 1/602, Bypass Road, Adoni, Andhra Pradesh 518301</h6>
+                <p><b>Description</b>: The crown jewel of Adoni's hospitality, Vimala Regency stands as the
+                    highest-rated premium accommodation with an impressive 4.3/5 rating from 360 reviews. This
+                    elegant property showcases stunning classical architecture with grand white columns and
+                    sophisticated lighting that creates a luxurious ambiance. The hotel's majestic facade reflects its
+                    commitment to excellence, offering superior comfort and modern amenities that consistently
+                    earn praise from discerning guests. </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li>Website: <a href="www.vimalaregency.com">www.vimalaregency.com</a></li>
+                    <li>Phone: +91 93466 97832</li>
+                    <li>Rating: 4.3/5 (360 reviews)</li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="Bheemas Regency">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/Beemas_res.png" alt="" style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2>Bheemas Regency &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: 20/29(P), V.B.S Road, Adoni, Andhra Pradesh 518301</h6>
+                <p><b>Description</b>: A well-established hospitality landmark, Bheemas Regency maintains a solid
+                    reputation with a 3.7/5 rating based on an extensive 1,127 guest reviews. The hotel features
+                    thoughtfully designed rooms with soothing lavender tones, comfortable furnishings, and
+                    essential amenities including air conditioning, flat-screen TVs, and elegant decor. The property's
+                    extensive review base demonstrates its consistent appeal and reliable service standards for
+                    both business and leisure travelers. </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> Website: <a href="www.bheemasresidency.com">www.bheemasresidency.com</a></li>
+                    <li> Phone: +91 85122 52555 </li>
+                    <li>Rating: 3.7/5 (1,127 reviews) </li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="Chekuri Residency">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/chekuri_residency.jpeg" alt=""
+                    style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2>Chekuri Residency (Capital O 61155)&nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: 1-8/18 Aspari Road, Near New Bus Stand, Adoni, Andhra Pradesh 518301 </h6>
+                <p><b>Description</b>: This highly-rated property boasts an impressive 4.3/5 rating and excels in
+                    cleanliness and hospitality. The multi-story building features a modern grey and blue facade with
+                    well-maintained rooms, spacious air-conditioned accommodations, and pristine bathrooms.
+                    Guests consistently praise the friendly staff service, strategic location near the bus stand, and
+                    comprehensive amenities including 24-hour front desk service, free WiFi, parking facilities, and
+                    multilingual staff support. </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> OYO Booking: <a href=" www.oyorooms.com/82042/"> www.oyorooms.com/82042/</a></li>
+                    <li> Room Rates: ₹1,700-2,100 per night </li>
+                    <li>Rating: 4.3/5 </li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="Sri Deepthi Lodge">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/deepthi1.jpeg" alt="" style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2>Sri Deepthi Lodge and Mini Function Hall &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: Building No 8-161, Yemmiganur Main Road, Bypass Road (beside Nayara Petrol
+                    Bunk), Adoni</h6>
+                <p><b>Description</b>: A budget-friendly accommodation offering excellent value with clean, modern
+                    rooms featuring dual bed configurations, air conditioning, and flat-screen televisions. The
+                    property maintains high cleanliness standards with well-appointed bathrooms and contemporary
+                    amenities. The lodge also features a mini function hall for events and gatherings, making it
+                    suitable for both leisure and business purposes.</p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> Check-in: 1:30 PM | Check-out: 11:30 AM</li>
+                    <li>Room Rates: Starting from ₹1,650 per night </li>
+                    <li>Goibibo Listing Available </li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="The Aura">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/aura.jpeg" alt="" style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2>The Aura &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: Adoni, Andhra Pradesh</h6>
+                <p><b>Description</b>: A unique premium accommodation offering both 2-bedroom house and 1-bedroom
+                    apartment options with distinctive features. The property showcases a welcoming modern
+                    entrance with polished stone stairs leading to an elegantly furnished lobby. Exclusive amenities
+                    include private pool access on a scenic terrace overlooking green landscapes, air conditioning,
+                    free WiFi, private parking, and terrace facilities. Particularly family-friendly and ideal for
+                    extended stays. </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> Booking: <a href=" www.casai.com/property/the-aura/BC-14650280 ">
+                            www.casai.com/property/the-aura/BC-14650280 </a></li>
+                    <li>Rates: Starting from $68-69 per night </li>
+                    <li>Features: Private pool, terrace views </li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="Dwaraka Lodge">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/dwaraka.jpeg" alt="" style="width:500px; height:400px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2> Dwaraka Lodge &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: HBG Nagar, Adoni (7-minute walk from Railway Station)</h6>
+                <p><b>Description</b>: A convenient accommodation featuring a distinctive tall, narrow architectural
+                    design with functional grey facade and pink accent details. Strategically located just a short walk
+                    from Adoni Railway Station, making it ideal for transit travelers. The property offers standard
+                    amenities with simple yet comfortable accommodations, providing essential services for
+                    budget-conscious guests seeking proximity to transportation hubs. </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> MakeMyTrip Listing Available</li>
+                    <li> Check-in: 12:00 PM | Check-out: 12:00 PM </li>
+                    <li> Distance: 7 minutes walk to Railway Station </li>
+                </ul>
+                </p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="container py-5">
+        <div class="row justify-content-center align-items-center" id="Rajshri Hotel">
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <img src="adoni/hotel/rajshri-hotel-skd.jpeg" alt=""
+                    style="width:500px; height:600px; object-fit:cover;">
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start ">
+                <h2> Rajshri Hotel &nbsp;&nbsp;&nbsp; </h2>
+                <h6>Address: Door No 20/68, Railway Station Road, SKD Nagar, Adoni, Andhra Pradesh 518301
+                    (near HBG Nagar) </h6>
+                <p><b>Description</b>: A modest 2-star accommodation strategically located close to the railway station,
+                    Rajshri Hotel offers convenient access for transit travelers. The property features both AC and
+                    non-AC rooms with spacious accommodations and clean bathrooms. The hotel is renowned for
+                    its purely vegetarian restaurant that serves delicious Andhra cuisine, particularly praised for
+                    dishes like Veg Kolhapuri. Guests appreciate the friendly staff, quick service, and the
+                    restaurant's popularity among locals, though the property lacks elevator facilities. The hotel
+                    maintains a homey atmosphere with basic amenities suitable for budget-conscious travelers. </p>
+                <p class="fw-bold mt-3">Key Features:
+                <ul>
+                    <li> Pure vegetarian restaurant (highly rated for food quality)</li>
+                    <li> Both AC and non-AC room options </li>
+                    <li>Spacious rooms and bathrooms </li>
+                    <li>Close proximity to railway station (main road location) </li>
+                    <li>24-hour dining service </li>
+                    <li>No elevator (multi-story building) </li>
+                    <li>Limited parking facilities </li>
+                </ul>
+                </p>
+                <p class="fw-bold mt-3">Resources:
+                <ul>
+                    <li> Phone: +91 85122 53308 (Hotel), +91 85122 53304 (Restaurant) </li>
+                    <li> Rating: 3.0/5 on TripAdvisor (3 reviews), 3.5/5 on Google </li>
+                    <li>Price Range: Standard rooms ~₹1,000-1,500 per night </li>
+                    <li>Restaurant Hours: 8:00 AM - 10:30 PM (Daily) </li>
+                    <li> Check-in/Check-out: Standard hotel timings </li>
+                </ul>
+                </p>
+                <p><b>Conclusion</b>n: These seven establishments collectively represent Adoni's finest accommodation
+                    options, ranging from luxury properties like Vimala Regency and The Aura to reliable budget
+                    choices such as Sri Deepthi Lodge and Dwaraka Lodge. Each property offers unique
+                    advantages, ensuring suitable options for diverse traveler preferences and budgets while
+                    exploring the historic Kurnool region.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Booking
+                    Now</button>&nbsp; <a href="#" class="btn btn-primary" role="button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <hr class="my-4 w-75 mx-auto">
+    <section class="container " id="restaurants">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="card-title text-center my-5">
+                <h2>Best <span
+                        class="animate__animated animate__zoomInRight animate__delay-1s animate__infinite	infinite">Restaurants</span>
+                    in
+                    Adoni</h2>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Trupthi Bhojanashala">
+                <img src="adoni/hotel/adoni_restaurents/tulajaa.jpeg" alt="" width="350px" height="200px">
+                <h3> Trupthi Bhojanashala</h3>
+                <ul>
+                    <li>Rating: 4.8 / 5 (256 ratings) </li>
+                    <li>Location: Adoni–Yemmiganur Road </li>
+                    <li> Contact: +91 97314 05488 </li>
+                    <li>Description: One of the highest-rated vegetarian restaurants in Adoni. Known for its
+                        simple ambience and homely meals, it is a trusted choice for families and everyday
+                        dining. </li>
+                    <li>Famous For: <b>South Indian meals, chapati, sambar, rasam, curd rice. </b></li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Red Chilli Bar & Family Restaurant">
+                <img src="adoni/hotel/adoni_restaurents/Red-chilli2.jpeg" alt="" width="350px" height="200px">
+                <h3> Red Chilli Bar & Family Restaurant </h3>
+                <ul>
+                    <li>Rating: 4.1 / 5 (1,352 ratings) </li>
+                    <li>Location: Vengalapuram, Adoni</li>
+                    <li> Contact: +91 97319 17885 </li>
+                    <li> Description: A popular multi-cuisine restaurant with a bar section, offering spacious
+                        seating and a wide variety of dishes. Ideal for families as well as groups of friends. </li>
+                    <li> Famous For: <b>Chicken biryani, tandoori dishes, Chinese starters, spicy Andhra curries.</b>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Sri Sai Milltree Hotel">
+                <img src="adoni/hotel/adoni_restaurents/sri-sai-miltre.jpeg" alt="" width="350px" height="200px">
+                <h3> Sri Sai Milltree Hotel</h3>
+                <ul>
+                    <li>Rating: 4.1 / 5 (267 ratings) </li>
+                    <li> Location: SKD Nagar, Adoni</li>
+                    <li> Contact: +91 89519 59730</li>
+                    <li> Description: A neat and well-maintained restaurant serving both vegetarian and
+                        non-vegetarian food. Appreciated for its balanced flavors and prompt service. </li>
+                    <li> Famous For: <b>Veg meals, chicken curry, paneer dishes, fried rice varieties. </b></li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Shawarma King">
+                <img src="adoni/hotel/adoni_restaurents/shawarma.jpeg" alt="" width="350px" height="200px">
+                <h3>Shawarma King</h3>
+                <ul>
+                    <li> Rating: 4.1 / 5 (219 ratings) </li>
+                    <li> Location: Gym Road, Adoni</li>
+                    <li> Contact: +91 96113 72439 </li>
+                    <li> Description: A budget-friendly restaurant with authentic taste, offering a mix of
+                        vegetarian and non-vegetarian meals. A reliable choice for locals. </li>
+                    <li> Famous For: <b>South Indian meals, chicken fry, dal curry, tiffins.</b> </li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Bassamma Hotel">
+                <img src="adoni/hotel/adoni_restaurents/basamma.jpeg" alt="" width="350px" height="200px">
+                <h3> Bassamma Hotel</h3>
+                <ul>
+                    <li>Rating: 4.1 / 5 (152 ratings) </li>
+                    <li> Location: Gym Road, Adoni</li>
+                    <li>Contact: +91 96113 72439</li>
+                    <li>Description: A budget-friendly restaurant with authentic taste, offering a mix of
+                        vegetarian and non-vegetarian meals. A reliable choice for locals. </li>
+                    <li> Famous For: <b>South Indian meals, chicken fry, dal curry, tiffins.</b> </li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Renukaamba Veg Hotel">
+                <img src="adoni/hotel/adoni_restaurents/renukambaa1.jpeg" alt="" width="350px" height="200px">
+                <h3> Renukaamba Veg Hotel</h3>
+                <ul>
+                    <li> Rating: 3.9 / 5 (772 ratings) </li>
+                    <li> Location: Kranthi Nagar, Adoni</li>
+                    <li> Description: A well-known vegetarian hotel in Adoni, serving traditional Andhra-style
+                        meals at reasonable prices. Popular during lunch hours. </li>
+                    <li> Famous For: <b>Veg thali, sambar, rasam, chutney-based tiffins. </b></li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Sri Krishna Bhavan">
+                <img src="adoni/hotel/adoni_restaurents/sri-krishna-bhavani.jpeg" alt="" width="350px" height="200px">
+                <h3>Sri Krishna Bhavan</h3>
+                <ul>
+                    <li>Rating: 3.9 / 5 (515 ratings) </li>
+                    <li> Location: SKD Nagar, Adoni </li>
+                    <li>Contact: +91 98809 06164</li>
+                    <li> Description: A long-standing vegetarian restaurant with simple interiors and consistently
+                        good food. Frequently chosen for breakfast and regular meals. </li>
+                    <li>Famous For: <b> Dosa, idli, vada, full South Indian meals.</b> </li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+            <div class="card-body col-12 col-md-4 col-sm-3 p-3" id="Tulaja Family Restaurant">
+                <img src="adoni/hotel/adoni_restaurents/tulajaa2.jpeg" alt="" width="350px" height="200px">
+                <h3>Tulaja Family Restaurant</h3>
+                <ul>
+                    <li>Rating: 4.0 / 5 (approx.)</li>
+                    <li>Location: Near Clock Tower, Adoni </li>
+                    <li> Contact: (Local contact not publicly listed) </li>
+                    <li> Description: A well-known family restaurant in Adoni with spacious interiors and a
+                        friendly atmosphere. It serves both vegetarian and non-vegetarian dishes, making it a
+                        reliable choice for families and groups. The restaurant is appreciated for its neat
+                        ambience and wide food options. </li>
+                    <li> Famous For: <b>Mutton curry, egg pakoda, chicken snacks, vegetarian meals.</b> </li>
+                </ul>
+                <button class="btn btn-outline-primary">View Menu</button>
+            </div>
+
+        </div>
+    </section>
+    <footer class="container-fluid text-center text-bg-dark my-auto py-5">
+        <h5 class="container ">&copy;The Best <span>Hotels</span>& <span>Restaurants</span> Visit Now <br><a
+                href="index.html">www.AD-Adoni.com</a></h5>
+    </footer>
+</body>
+
+</html>

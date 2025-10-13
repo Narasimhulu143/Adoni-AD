@@ -185,9 +185,3 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* Example icon placeholders */
-#icon-temple { background-image: url('icons/temple.svg'); }
-#icon-lake { background-image: url('icons/lake.svg'); }
-#icon-market { background-image: url('icons/market.svg'); }
-#icon-school { background-image: url('icons/school.svg'); }

@@ -98,7 +98,7 @@ strong:hover {
 }
 
 .card-body img {
-    width:100%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 1px 5px 7px;
 }
@@ -125,63 +125,145 @@ footer {
 }
 
 .amenities-section {
-  position: relative;
-  overflow: hidden;
-  padding: 4rem 2rem;
-  color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    color: #fff;
 }
 
 .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .amenities-overlay {
-  position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds contrast */
-  padding: 2rem;
-  border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional: adds contrast */
+    padding: 2rem;
+    border-radius: 12px;
 }
 
 .amenities-overlay h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .section-intro {
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
 }
 
 .amenities-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .amenity-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
 }
 
 .amenity-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .amenity-icon {
-  height: 80px;
-  margin-bottom: 1rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 80px;
+    margin-bottom: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* --- CARD HOVER EFFECTS --- */
+.dish-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: none;
+    overflow: hidden;
+    /* Keeps the zoomed image inside the card */
+}
+
+/* 1. Lift the card up */
+.dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 2. Image Zoom Effect */
+.img-wrapper {
+    overflow: hidden;
+    height: 200px;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.dish-card:hover .card-img-top {
+    transform: scale(1.15);
+}
+
+/* --- SPECIALTY BOX HOVER --- */
+.specialty-box {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.specialty-box:hover {
+    background-color: #fff3cd !important;
+    /* Light yellow background */
+    border-color: #ffc107 !important;
+    transform: scale(1.02);
+}
+
+/* --- FAST FOOD ICON ANIMATION --- */
+.fast-food-card {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.fast-food-card:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+/* Rotate icon on hover */
+.fast-food-card:hover .category-icon {
+    transform: rotateY(180deg);
+}
+
+.rating-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }

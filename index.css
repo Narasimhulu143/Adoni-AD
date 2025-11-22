@@ -267,3 +267,48 @@ footer {
     z-index: 2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+.adoni-welcome-section {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .adoni-welcome-section h1 {
+            color: #0056b3;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .adoni-welcome-section h2 {
+            color: #0056b3;
+            font-size: 1.5em;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .adoni-welcome-section p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            text-align: left;
+            color: #000;
+        }
+
+        .adoni-welcome-section ul {
+            list-style-type: disc;
+            margin: 0 0 15px 20px;
+            text-align: left;
+            color: #000;
+        }
+
+        .adoni-welcome-section ul li {
+            margin-bottom: 5px;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
